@@ -31,21 +31,32 @@ import Link from "next/link"
 import { useState } from "react"
 import { DialogClose } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
+import { Globe } from "lucide-react"
 
 
 export function CommandBox() {
     const [data, setData] = useState('')
 
+
+    const AddressKey = ['nutan nagar', 'jabra', 'korrh chowk', 'lakhe', 'matawari', 'babugaon', 'nilambar pitambar chowk', 'devangana', 'shivpuri', 'krishpuri', 'sindur', 'janda chowk', 'bundel nagar']
+
     return (
         <>
             <Command className="rounded-lg border shadow-md ">
-                <CommandInput placeholder="Type a command or search..." onChangeCapture={(e:any)=>setData(e.target.value)} />
+                <CommandInput placeholder="Type a command or search..." onChangeCapture={(e: any) => setData(e.target.value)} />
                 <CommandList>
-                    <CommandEmpty>
-                        <div className="bg-primary mx-1 text-left px-3 py-2 rounded-md font-semibold ">
-                            Search  {data}
-                        </div>
-                    </CommandEmpty>
+                    <Link href={`/lodge/${data.replaceAll(' ', '-')}`}>
+                        <DialogClose asChild>
+                            <div>
+                                <CommandEmpty>
+                                    <div className="bg-primary mx-1 text-left px-3 py-2 rounded-md font-semibold ">
+                                        Search  {data}
+                                    </div>
+                                </CommandEmpty>
+                            </div>
+                        </DialogClose>
+                    </Link>
+
                     <CommandGroup heading="Suggestions">
                         <Link href={'/dashboard'}>
                             <DialogClose asChild>
@@ -67,6 +78,26 @@ export function CommandBox() {
                         </CommandItem>
                     </CommandGroup>
                     <CommandSeparator />
+
+
+                    <CommandGroup heading="Lodge Place">
+                        {
+                            AddressKey.map((ele, index) => <Link href={`/lodge/${ele.replaceAll(' ', '-')}`}>
+                                <DialogClose asChild>
+                                    <div>
+                                        <CommandItem>
+                                            <Globe className="mr-2 h-4 w-4" />
+                                            <span className="capitalize">{ele}</span>
+                                            {/* <CommandShortcut>⌘P</CommandShortcut> */}
+                                        </CommandItem>
+                                    </div>
+                                </DialogClose>
+                            </Link>)
+                        }
+                    </CommandGroup>
+
+
+
                     <CommandGroup heading="Settings">
                         <CommandItem>
                             <PersonIcon className="mr-2 h-4 w-4" />
