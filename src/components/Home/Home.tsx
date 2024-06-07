@@ -10,7 +10,7 @@ function Home() {
                 <span>Introducing Lodge Finder</span>
                 <ArrowRightIcon />
             </Link>
-            <h2 className="scroll-m-20 text-4xl px-5 font-extrabold tracking-tight lg:text-5xl text-center">
+            <h2 className="scroll-m-20 text-4xl px-3 font-extrabold tracking-tight lg:text-5xl text-center">
                 Find your stay easily in Hazaribagh
             </h2>
             <p className="leading-5 mt-3 text-sm text-center w-full sm:px-[300px] px-5">
