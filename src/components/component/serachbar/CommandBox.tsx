@@ -82,7 +82,7 @@ export function CommandBox() {
 
                     <CommandGroup heading="Lodge Place">
                         {
-                            AddressKey.map((ele, index) => <Link href={`/lodge/${ele.replaceAll(' ', '-')}`}>
+                            AddressKey.map((ele, index) => <Link key={index} href={`/lodge/${ele.replaceAll(' ', '-')}`}>
                                 <DialogClose asChild>
                                     <div>
                                         <CommandItem>
