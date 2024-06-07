@@ -39,22 +39,19 @@ function SideBar() {
                 </SheetTrigger>
                 <SheetContent side="left" className="sm:max-w-xs">
                     <nav className="grid gap-6 text-lg font-medium">
-                        <Link
-                            href="#"
-                            className="group flex h-10 w-10 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:text-base"
-                        >
-                            <Package2 className="h-5 w-5 transition-all group-hover:scale-110" />
-                            <span className="sr-only">Acme Inc</span>
+                        <Link href={'/'} className='items-center gap-2 flex cursor-pointer px-2.5'>
+                            <img src="logo.svg" alt="" className='dark:invert ' width={25} />
+                            <span className=" font-bold">subodh/ui</span>
                         </Link>
                         <Link
-                            href="#"
+                            href="/dashboard"
                             className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                         >
                             <Home className="h-5 w-5" />
                             Dashboard
                         </Link>
                         <Link
-                            href="#"
+                            href="/dashboard/orders"
                             className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                         >
                             <ShoppingCart className="h-5 w-5" />
