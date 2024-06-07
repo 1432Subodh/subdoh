@@ -36,15 +36,15 @@ function Navbar() {
         </div>
         <NavMenu />
       </div>
-      <div className='flex gap-5 items-center'>
       <DialogBox />
+      <div className='flex gap-5 items-center'>
         <div className='flex gap-2 items-center'>
 
-        <ModeToggle />
-        <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+          <ModeToggle />
+          <Avatar>
+            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
         </div>
       </div>
     </nav>
