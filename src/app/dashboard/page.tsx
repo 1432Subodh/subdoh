@@ -1,10 +1,7 @@
-import { Dashboard } from '@/components/component/Block/Dashboard'
-import React from 'react'
+import Dashboard from "@/components/component/Dashboard/Dashboard";
 
-function page() {
+export default function Page() {
   return (
-    <div><Dashboard/></div>
+        <Dashboard/>
   )
 }
-
-export default page

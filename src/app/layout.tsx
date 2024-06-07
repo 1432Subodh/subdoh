@@ -19,21 +19,21 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <main className="w-full min-h-screen">
+        <main className="w-full min-h-screen overflow-hidden">
 
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
           >
-          <div>
-          <Navbar/> 
+            <div>
+              <Navbar />
 
-          {children}
-          </div>
-        </ThemeProvider>
-          </main>
+                {children}
+            </div>
+          </ThemeProvider>
+        </main>
 
       </body>
     </html >
