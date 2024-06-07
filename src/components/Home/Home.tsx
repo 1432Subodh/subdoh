@@ -16,7 +16,6 @@ function Home() {
             </h2>
             <p className="leading-5 mt-3 text-sm text-center w-full sm:px-[300px] px-5">
                 The king, seeing how much happier his subjects were, realized the error of his ways and repealed the joke tax.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis corporis veritatis, ex optio labore dignissimos illum deserunt sunt, libero, consectetur eveniet!
             </p>
             <div className='flex gap-3 mt-5'>
                 <Link href={'/lodge'}>
