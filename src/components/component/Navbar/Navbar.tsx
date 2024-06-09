@@ -31,7 +31,7 @@ function Navbar() {
           </div>
           <Link href={'/'} className='items-center gap-2 hidden sm:flex cursor-pointer'>
             {/* <img src="logo.svg" alt="" className='dark:invert ' width={25} /> */}
-            <span className=" font-bold">nihal/ui</span>
+            <span className=" font-bold">subodh/ui</span>
           </Link>
         </div>
         <NavMenu />

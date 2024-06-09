@@ -9,33 +9,30 @@ import {
 } from "@/components/ui/card"
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, Star } from 'lucide-react'
+import Link from 'next/link'
 
 
 function Cards() {
     return (
-        <div className='sm:w-[20vw] w-[46vw] h-72 justify-between'>
+        <Link href={'#'}>
 
-            <Card className='sm:h-[305px] h-[260px]'>
-                <div className='w-full p-2 '>
-                    <img
-                        src="/image.png"
-                        alt="Picture of the author"
-                        
-                        className='w-full h-40 object-cover rounded-md'
-                    />
+            <div className='sm:w-52 w-[46vw] flex flex-col rounded h-56 border bg-green-500 dark:bg-[#151518] p-1 justify-between '>
+                <img src="img.webp" alt="" className='w-full h-[60%] rounded-sm object-cover' />
+                <h1 className='text-lg font-sembold'>Lorem ipsum dolor .</h1>
+                <p className='text-xs'>Lorem ipsum dolor sit amet, </p>
+                <div className='flex justify-between item-center'>
+                    <div className='flex items-center'>
+
+                    <Star size={12}/>
+                    <Star size={12}/>
+                    <Star size={12}/>
+                    <Star size={12}/>
+                    </div>
+                    <span className='underline text-primary text-sm pb-2'>More</span>
                 </div>
-                <CardHeader className='p-2'>
-                    <CardTitle className='text-lg pb-0'>Chotu lodge</CardTitle>
-                    <CardDescription className='text-xs sm:inline-block hidden'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, ab in? Magnam!</CardDescription>
-                </CardHeader>
-               
-                <CardFooter className='flex justify-between px-2'>
-                    <p className='text-normal'>800 Rs.</p>
-                    <Button variant={'default'} className='text-sm pr-1' size={'xs'}>More <ChevronRight height={16}/></Button>
-                </CardFooter>
-            </Card>
-        </div>
+            </div>
+        </Link>
 
     )
 }

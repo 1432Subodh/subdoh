@@ -21,8 +21,8 @@ function DialogBox() {
     return (
         <Dialog >
             <DialogTrigger>
-                <div className='sm:w-96 w-40 border h-8 rounded-md flex items-center justify-between px-3'>
-                    <div className='flex items-center gap-1'>
+                <div className='sm:w-96 w-40 border h-8 rounded-md flex items-center justify-between px-3 dark:hover:bg-zinc-900 hover:bg-zinc-50'>
+                    <div className='flex items-center gap-1 '>
                         <MagnifyingGlassIcon height={17} width={17} />
                         <span className='text-gray-400 text-sm'>Search here....</span>
                     </div>

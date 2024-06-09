@@ -1,18 +1,29 @@
 import Cards from '@/components/component/lodge/Cards'
 import React from 'react'
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable"
+import Fillter from '@/components/component/lodge/Fillter'
+import LodgeForeground from '@/components/component/lodge/LodgeForeground'
 
 function page() {
   return (
-    <div className='pt-3 flex flex-wrap gap-1 justify-between min-h-screen sm:px-10 px-0'>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-    </div>
+    <>
+    <ResizablePanelGroup
+      direction="horizontal"
+      className="sm:h-[100vh]  w-full rounded-lg border"
+      >
+      <ResizablePanel defaultSize={20} className='hidden sm:inline-block'>
+        <Fillter/>
+      </ResizablePanel>
+      <ResizableHandle withHandle />
+      <ResizablePanel defaultSize={80}>
+        <LodgeForeground/>
+      </ResizablePanel>
+    </ResizablePanelGroup>
+      </>
   )
 }
 
