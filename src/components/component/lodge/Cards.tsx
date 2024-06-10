@@ -15,14 +15,15 @@ import Link from 'next/link'
 
 function Cards() {
     return (
-        <Link href={'#'}>
+        <Link href={'/lodge/lodgeView/af'}>
 
-            <div className='sm:w-52 w-[95vw] sm:gap-0 gap-3  flex sm:flex-col flex-row rounded sm:h-56 h-24 border bg-green-500 dark:bg-[#151518] p-1 sm:justify-between '>
+            <div className='sm:w-52 w-[95vw] sm:gap-1 gap-3  flex sm:flex-col flex-row rounded sm:h-60 h-24 bg-zinc-50 dark:bg-[#151518] p-1 sm:justify-between '>
                 <img src="img.webp" alt="" className='sm:w-full w-[150px] sm:h-[60%] h-full rounded-sm object-cover' />
                 <div className='w-full'>
 
                     <h1 className='sm:text-lg text-normal font-sembold'>Lorem ipsum dolor .</h1>
                     <p className='text-xs'>Lorem ipsum dolor sit amet, </p>
+                    <p>800 Rs.</p>
                     <div className='flex justify-between item-center w-full'>
                         <div className='flex items-center'>
 
