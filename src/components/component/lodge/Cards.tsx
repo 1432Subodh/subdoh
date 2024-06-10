@@ -17,9 +17,9 @@ function Cards() {
     return (
         <Link href={'#'}>
 
-            <div className='sm:w-52 w-[45vw] flex flex-col rounded h-56 border bg-green-500 dark:bg-[#151518] p-1 justify-between '>
+            <div className='sm:w-52 w-[45.5vw] flex flex-col rounded h-56 border bg-green-500 dark:bg-[#151518] p-1 justify-between '>
                 <img src="img.webp" alt="" className='w-full h-[60%] rounded-sm object-cover' />
-                <h1 className='text-lg font-sembold'>Lorem ipsum dolor .</h1>
+                <h1 className='sm:text-lg text-normal font-sembold'>Lorem ipsum dolor .</h1>
                 <p className='text-xs'>Lorem ipsum dolor sit amet, </p>
                 <div className='flex justify-between item-center'>
                     <div className='flex items-center'>
