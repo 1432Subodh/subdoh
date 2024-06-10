@@ -17,19 +17,22 @@ function Cards() {
     return (
         <Link href={'#'}>
 
-            <div className='sm:w-52 w-[45.5vw] flex flex-col rounded h-56 border bg-green-500 dark:bg-[#151518] p-1 justify-between '>
-                <img src="img.webp" alt="" className='w-full h-[60%] rounded-sm object-cover' />
-                <h1 className='sm:text-lg text-normal font-sembold'>Lorem ipsum dolor .</h1>
-                <p className='text-xs'>Lorem ipsum dolor sit amet, </p>
-                <div className='flex justify-between item-center'>
-                    <div className='flex items-center'>
+            <div className='sm:w-52 w-[95vw] sm:gap-0 gap-3  flex sm:flex-col flex-row rounded sm:h-56 h-24 border bg-green-500 dark:bg-[#151518] p-1 sm:justify-between '>
+                <img src="img.webp" alt="" className='sm:w-full w-[150px] sm:h-[60%] h-full rounded-sm object-cover' />
+                <div className='w-full'>
 
-                    <Star size={12}/>
-                    <Star size={12}/>
-                    <Star size={12}/>
-                    <Star size={12}/>
+                    <h1 className='sm:text-lg text-normal font-sembold'>Lorem ipsum dolor .</h1>
+                    <p className='text-xs'>Lorem ipsum dolor sit amet, </p>
+                    <div className='flex justify-between item-center w-full'>
+                        <div className='flex items-center'>
+
+                            <Star size={12} />
+                            <Star size={12} />
+                            <Star size={12} />
+                            <Star size={12} />
+                        </div>
+                        <span className='underline text-primary text-sm pb-2'>More</span>
                     </div>
-                    <span className='underline text-primary text-sm pb-2'>More</span>
                 </div>
             </div>
         </Link>
