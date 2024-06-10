@@ -1,8 +1,11 @@
+import View from '@/components/component/lodgeView/View'
 import React from 'react'
 
 function page() {
   return (
-    <div>welcome to view</div>
+    <div>
+        <View/>
+    </div>
   )
 }
 
